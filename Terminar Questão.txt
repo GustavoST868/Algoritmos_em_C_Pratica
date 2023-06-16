@@ -1,0 +1,86 @@
+#include<stdio.h>
+
+void par_sub(int (*matriz))
+
+{
+
+    int i,j;
+
+    for(i=0;i<2;i++)//trocar os valores;
+
+    {
+
+        for(j=0;j<3;j++)
+
+        {
+
+            if(matriz[i][j] % 2 == 0)
+
+            {
+
+                matriz[i][j]==1000;
+
+            }
+
+        }
+
+    }
+
+   for(i=0;i<2;i++)//Mostrar os valores da matriz
+
+    {
+        printf("\n");
+
+        for(j=0;j<3;j++)
+
+        {
+
+            printf(" %d ",matriz[i][j]);
+
+        }
+
+    }
+
+
+}
+
+int main()
+
+{
+
+    int i,j;
+
+    int matriz[2][3];
+
+    for(i=0;i<2;i++)//Receber os valores da matriz
+
+    {
+
+        for(j=0;j<3;j++)
+
+        {
+
+            scanf("%d",&matriz[i][j]);
+
+        }
+
+    }
+
+    for(i=0;i<2;i++)//Mostrar os valores da matriz
+
+    {
+        printf("\n");
+
+        for(j=0;j<3;j++)
+
+        {
+
+            printf(" %d ",matriz[i][j]);
+
+        }
+
+    }
+
+    par_sub(matriz);
+
+}
